@@ -74,6 +74,7 @@
     "webpack": "^3.5.2"
   },
   "peerDependencies": {
+    "material-ui": "^1.0.0-beta.16",
     "react": "15",
     "redux-form": "7"
   },
