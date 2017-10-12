@@ -3,15 +3,20 @@ const mapError = (
     meta: { touched, error, warning } = {},
     input,
     ...props
+  },
+  sendHelperText = true
+) => {
+  const errorProps = {}
+
+  if (touched && (error || warning)) {
+    errorProps.error = Boolean(error || warning)
+
+    if (sendHelperText) {
+      errorProps.helperText = error || warning
+    }
   }
-) =>
-  (touched && (error || warning)
-    ? {
-        ...props,
-        ...input,
-        error: Boolean(error || warning),
-        helperText: error || warning
-      }
-    : { ...input, ...props })
+
+  return { ...props, ...input, ...errorProps }
+}
 
 export default mapError

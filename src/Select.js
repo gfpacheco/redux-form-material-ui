@@ -8,7 +8,7 @@ export default createComponent(Select, ({
   defaultValue,
   ...props
 }) => ({
-  ...mapError(props),
+  ...mapError(props, false),
   ...inputProps,
   value: value,
   onChange: event => {

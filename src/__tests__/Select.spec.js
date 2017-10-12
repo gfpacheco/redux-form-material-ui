@@ -71,7 +71,6 @@ describe('Select', () => {
         name="myText"
         value="Foo"
         error
-        helperText="FooError"
         ref={() => {}}
         onChange={() => {}}
         onBlur={() => {}}
@@ -118,7 +117,6 @@ describe('Select', () => {
         name="myText"
         value="Foo"
         error
-        helperText="FooWarning"
         ref={() => {}}
         onChange={() => {}}
         onBlur={() => {}}
@@ -144,7 +142,6 @@ describe('Select', () => {
         name="myText"
         value=""
         error
-        helperText="FooWarning"
         ref={() => {}}
         onChange={() => {}}
         onBlur={() => {}}
